@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Fire Top up Bd</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-database-compat.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Free Fire Diamond Top-Up</h1>
+  <div id="auth">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <button onclick="signup()">Sign Up</button>
+  </div>
+
+  <div id="form" style="display:none;">
+    <input type="text" id="uid" placeholder="Enter Free Fire UID" /><br/>
+    <select id="package">
+      <option value="100">100 Diamonds</option>
+      <option value="310">310 Diamonds</option>
+      <option value="520">520 Diamonds</option>
+      <option value="1060">1060 Diamonds</option>
+    </select><br/>
+    <input type="file" id="screenshot" /><br/>
+    <select id="payment">
+      <option value="Bkash">Bkash - 01318689619</option>
+      <option value="Nagad">Nagad - 01318689619</option>
+    </select><br/>
+    <button onclick="submitOrder()">Submit Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
